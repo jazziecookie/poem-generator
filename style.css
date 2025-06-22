@@ -1,3 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock&family=Permanent+Marker&family=Special+Elite&display=swap');
+
+body,
+html {
+  height: 100%;
+}
+
 body {
-  background-color: mintcream;
+  display: grid;
+  place-items: center;
+  background-color: lightgrey;
+  background: url("background.jpg");
+  font-family: "Permanent Marker";
+  font-size: 30px;
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+}
+
+h1 {
+  background: url(textbg.jpg);
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+form {
+  padding: 20px;
+}
+
+footer {
+  margin-top: 20px;
+  background: url(textbg.jpg);
+  background-clip: text;
+  color: transparent;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #FFF;
+  text-decoration: dotted underline overline;
+}
+
+#input-box {
+  font-family: "Overlock";
+  font-size: 25px;
+  text-align: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5px;
+}
+
+#submit-button {
+background-color: #000;
+color: #fff;
+font-family: "Overlock";
+font-size: 25px;
+border-radius: 20px;
+border: dotted 2px lightgrey;
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+padding: 5px;
+transition: 200ms;
+}
+
+#submit-button:hover {
+  background-color: grey;
+  color: #000;
+  cursor: pointer;
+}
+
+#poem-output {
+  background-color: lightgrey;
+  background: url(paperbg.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  border: dotted 1px #000;
+  font-family: "Special Elite";
+  font-size: 20px;
+  padding: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2)
 }
