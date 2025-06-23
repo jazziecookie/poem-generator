@@ -47,6 +47,10 @@ a:hover {
   text-decoration: dotted underline overline;
 }
 
+img {
+  width: 60px;
+}
+
 #user-input {
   font-family: "Vujahday Script";
   font-size: 25px;

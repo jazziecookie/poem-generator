@@ -3,6 +3,8 @@ function getInput(event){
   event.preventDefault();
   let userInput = document.querySelector("#user-input");
 callApi(userInput.value);
+let poemOutput = document.querySelector("#poem");
+poemOutput.innerHTML = `<img src="hourglass.gif"><br />Generating poem, please wait...`;
 }
 
 function callApi(response){
@@ -13,9 +15,8 @@ function callApi(response){
 
 function outputPoem(aiPoem) {
 console.log(aiPoem.data.answer);
-
 new Typewriter("#poem", {
-  strings: `${aiPoem.data.answer}`,
+  strings: `${aiPoem.data.answer}<p></p><a href="https://allpoetry.com/poems/read_by/Charles%20Bukowski" target="_blank">Read the real Bukowski here</a>`,
   autoStart: true,
   loop: false,
   delay: 20,
@@ -25,3 +26,4 @@ new Typewriter("#poem", {
 
 let submitForm = document.querySelector("#submit-form");
 submitForm.addEventListener("submit", getInput);
+
