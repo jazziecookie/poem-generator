@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Overlock&family=Permanent+Marker&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vujahday Script&family=Permanent+Marker&family=Special+Elite&display=swap');
 
 body,
 html {
@@ -47,22 +47,22 @@ a:hover {
   text-decoration: dotted underline overline;
 }
 
-#input-box {
-  font-family: "Overlock";
+#user-input {
+  font-family: "Vujahday Script";
   font-size: 25px;
   text-align: center;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-  margin-bottom: 5px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
 }
 
 #submit-button {
-background-color: #000;
+background-color: rgba(0, 0, 0, 0.7);
 color: #fff;
-font-family: "Overlock";
+font-family: "Permanent Marker";
 font-size: 25px;
 border-radius: 20px;
 border: dotted 2px lightgrey;
-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
 padding: 5px;
 transition: 200ms;
 }
@@ -73,7 +73,7 @@ transition: 200ms;
   cursor: pointer;
 }
 
-#poem-output {
+#poem {
   background-color: lightgrey;
   background: url(paperbg.jpg);
   background-size: cover;

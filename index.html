@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Poem generator</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 <body>
   <div class="container">
-  <h1>Welcome to my poem generator</h1>
-<form autocomplete="off">
+  <h1>Bukowski poem generator</h1>
+<form id="submit-form" autocomplete="off">
   <input type="text" 
-  id="input-box"
-  placeholder="Type a subject here..." 
+  id="user-input"
+  placeholder="Scrawl subject here..." 
   minlength="3" 
   required
   autofocus
@@ -25,7 +27,7 @@
   />
 </form>
 
-<div id="poem-output">
+<div id="poem">
 <br />some nights
 <br />I get lucky—
 <br />the ghosts sleep.
